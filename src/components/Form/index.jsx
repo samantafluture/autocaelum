@@ -9,16 +9,16 @@ export default function Form( ) {
     const inputAssunto = useRef();
     const inputMensagem = useRef();
 
-    const handleLoginSubmit = (e) => {
+    const handleContatoSubmit = (e) => {
         e.preventDefault();
-        let nome = inputNome.current.value; 
-        let email = inputEmail.current.value;
-        let telefone = inputEmail.current.value;
-        let assunto = inputEmail.current.value;
-        let mensagem = inputEmail.current.value;
+        let nome = inputNome.current.value.trim(); 
+        let email = inputNome.current.value.trim(); 
+        let telefone = inputNome.current.value.trim(); 
+        let assunto = inputNome.current.value.trim(); 
+        let mensagem = inputNome.current.value.trim(); 
 
-        if (!nome || !email || !telefone || !assunto || !mensagem) {
-            alert('Por favor, preencha todos os campos!');
+        if (!nome || !email || !assunto || !mensagem) {
+            alert('Por favor, preencha os campos obrigatório!');
         } 
         else {
             alert('Mensagem enviada com sucesso!');
@@ -26,7 +26,7 @@ export default function Form( ) {
     }
 
     return (
-        <form onSubmit={handleLoginSubmit}>
+        <form onSubmit={handleContatoSubmit}>
         <div className="campo">
             <input ref={inputNome} type="text" placeholder="* Seu nome:" />
         </div>
