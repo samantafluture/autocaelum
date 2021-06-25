@@ -17,8 +17,8 @@ export default function Menu({ children }) {
           <ul className="menu-principal">
             <li>
                 <NavLink to="/" activeClassName="active" exact>
-                    <i className="fas fa-home"></i> 
-                        Home
+                    <i className="fas fa-home"></i>
+                    &nbsp;Home
                 </NavLink>
             </li>
             <li>
