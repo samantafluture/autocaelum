@@ -7,11 +7,9 @@ import HomePage from "./pages/HomePage";
 import ContatoPage from "./pages/ContatoPage";
 import SobrePage from "./pages/SobrePage";
 import VeiculosPage from "./pages/VeiculosPage";
-import Notificacao from "./components/Notificacao";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Notificacao>
       <HelmetProvider>
         <BrowserRouter>
           <Switch>
@@ -22,7 +20,6 @@ ReactDOM.render(
           </Switch>
         </BrowserRouter>
       </HelmetProvider>
-    </Notificacao>
   </React.StrictMode>,
 
   document.getElementById("root")

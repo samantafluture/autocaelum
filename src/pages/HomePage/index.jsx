@@ -35,7 +35,7 @@ export default function HomePage() {
 
           <section className="container lista-veiculos">
             <h2>Veículos</h2>
-            <VeiculosList quantidade={4} />
+            <VeiculosList quantidade={4} randomico={true} />
           </section>
         </main>
       </MasterLayout>
